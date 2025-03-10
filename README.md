@@ -6,10 +6,11 @@ SparkML is a machine learning project built with **Apache Spark MLlib** on **Dat
 
 ## 📖 Project Overview
 This project leverages **Apache Spark MLlib** for:
-- Data preprocessing & feature engineering
-- Training models using Spark ML pipelines
-- Evaluating model performance on distributed datasets
-- Running Spark ML models on **Databricks**
+- **Data preprocessing & feature engineering** (including geospatial distance features 📍)
+- **Training models using Spark ML pipelines**
+- **Hyperparameter tuning with CrossValidation**
+- **Evaluating model performance on distributed datasets**
+- **Running Spark ML models on Databricks**
 
 ## 🛠️ Technologies Used
 - **Apache Spark** – Distributed data processing
@@ -38,16 +39,18 @@ jupyter notebook
 3. If using **Databricks**, upload the notebook and execute it within a cluster.
 
 ## 📊 Machine Learning Workflow
-✔ **Data Ingestion** – Loading large datasets into Spark DataFrames  
-✔ **Data Cleaning** – Handling missing values & feature transformations  
-✔ **Feature Engineering** – Scaling, encoding, and vectorization  
-✔ **Model Training** – Using Spark ML models (e.g., Logistic Regression, Decision Trees)  
-✔ **Model Evaluation** – Metrics like accuracy, RMSE, and precision-recall  
+✔ Data Ingestion – Loading large datasets into Spark DataFrames
+✔ Data Cleaning – Handling missing values & feature transformations
+✔ Feature Engineering – Added a distance-based feature to improve model predictions 🗺️
+✔ Hyperparameter Tuning – Optimized model performance with GridSearch & Cross-Validation
+✔ Model Training – Using Spark ML models (e.g., Logistic Regression, Decision Trees, Random Forest)
+✔ Model Evaluation – Metrics like AUC, RMSE, and precision-recall
 
 ## 📌 Next Steps
-🔹 Enhance the ML pipeline with **hyperparameter tuning**  
-🔹 Implement **deep learning models** using **Spark TensorFlow**  
-🔹 Deploy models with **MLflow**  
+🔹 Optimize feature selection further with Principal Component Analysis (PCA)
+🔹 Implement deep learning models using Spark TensorFlow
+🔹 Deploy models with MLflow & Databricks
+🔹 Improve dataset efficiency using Delta Lake
 
 ## 🤝 Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests.
